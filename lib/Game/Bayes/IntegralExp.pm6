@@ -2,7 +2,7 @@ use v6.c;
 
 class Game::Bayes::IntegralExp
 {
-	method BUILD() {
+	submethod BUILD() {
 
 	}
 
@@ -14,7 +14,7 @@ class Game::Bayes::IntegralExp
 	method Probability($b, $a, $mu = 0, $sigma = 1) {
 		### FIXME Perl 6 Pi
 		return 1 / ($sigma * sqrt(2 * 3.14152829)) * self.GaussIntegralFunctionality2($mu, $sigma, $b) -  
-		 (1 / ($sigma * sqrt(2 * 3.14152829)) * self.GaussIntegralFunctionality2($mu, $sigma, $a);
+		 (1 / ($sigma * sqrt(2 * 3.14152829)) * self.GaussIntegralFunctionality2($mu, $sigma, $a));
 	}
 
 	method Integral($high, $low) {

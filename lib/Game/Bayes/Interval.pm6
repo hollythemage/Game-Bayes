@@ -13,7 +13,7 @@ class Game::Bayes::Interval {
 
 		$.i = $ith;
 
-		$.midpoint = self.midpoint($b - $a / $ith);
+		$.midpoint = self.midpoint($high - $low / $ith);
 
 	}
 

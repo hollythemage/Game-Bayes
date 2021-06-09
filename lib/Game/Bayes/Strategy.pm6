@@ -19,9 +19,9 @@ class Game::Bayes::Strategy is Game::Stats::DistributionPopulation {
 				  ### to be used in the infimum, for minimum 
 				  ### probability of strategies
 
-		my $sup = 0.0.	
+		my $sup = 0.0;
 
-		for @!population -> $f {
+		for @.population -> $f {
 			my $loss = $f.BayesianLoss(@condps);
 			if ($loss > $sup) {
 				$sup = $loss;
@@ -35,7 +35,7 @@ class Game::Bayes::Strategy is Game::Stats::DistributionPopulation {
 						### times with infimum of this
 						### function to have a smallest
 						### probability
-		my $sup = 0.0.	
+		my $sup = 0.0;	
 
 		loop (my $i = 0; $i < @.strategypopulation.population.elems.rand; )
 		 {
