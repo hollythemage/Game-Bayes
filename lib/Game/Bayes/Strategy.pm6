@@ -1,4 +1,5 @@
 use v6.c; 
+use Game::Stats::Population;
 use Game::Stats::DistributionPopulation;
  
 class Game::Bayes::Strategy is Game::Stats::DistributionPopulation {

@@ -1,7 +1,6 @@
 use v6.c;
 
 use Game::Bayes::Hypothesis;
-use Game::Stats:Probability;
 
 class Game::Bayes::RiskFunction {
 

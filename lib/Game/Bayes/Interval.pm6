@@ -1,5 +1,4 @@
 use v6.c;
-use Game::Stats::DistributionPopulation;
 
 class Game::Bayes::Interval {
 
